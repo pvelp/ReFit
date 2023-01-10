@@ -9,10 +9,11 @@
 
 </head>
 <body>
+<!--HEADER-->
     <header class="header">
-        <div class="container">
+        <div class="header-container">
         <div class="logo">
-            <img src="./images/logo.jpeg" alt="logo" class="pic">
+            <img src="images/logo.jpeg" alt="logo" class="pic">
         </div>
         <nav class="nav">
             <a href="#" class="nav-link">Главная</a>
@@ -22,7 +23,7 @@
         </nav>
         <div class="header-contacts">
             <a href="https://wa.me/message/B7PFTLCLXRCRL1">
-                <img src="./images/whatsapp.png" alt="what's app" class="whatsapp">
+                <img src="images/whatsapp.png" alt="what's app" class="whatsapp">
             </a>
             <div class="header-number">
                 <a href="tel:+7 (991) 934-13-59" class="phone">+7 (991) 934-13-59</a>
@@ -30,11 +31,13 @@
         </div>
         </div>
     </header>
+
+<!--MAIN-->
     <main class="main">
-        <div class="main-container">
+        <div class="container">
         <!--Girl-->
             <div class="content">
-                <img src="./images/ledi.jpg" alt="Picture" class="main-img">
+                <img src="images/ledi.jpg" alt="Picture" class="main-img">
             </div>
             <div class="content">
             <!--Text+button-->
@@ -46,6 +49,55 @@
             </div>
         </div>
     </main>
-    <script src="./js/main.js"></script>
+
+<!--ABOUT US-->
+    <section class="about-us">
+        <div class="container container_about-us">
+            <div class="content">
+                <div class="main-content content_about-us">
+                    <h2 class="main-text text_about-us"><span style="color: #008074; font-size: 50px; font-weight: 600;">ReFit</span>
+                        - компания, которая занимается комплексной реставрацией профессиональных тренажеров и
+                        доводит их до состояния <span style="color: #008074; font-size: 50px; font-weight: 600;">новых</span>.
+                        При этом, цены на оборудование по сравнению с новыми ниже в среднем на
+                        <span style="color: #008074; font-size: 50px; font-weight: 600;">70%</span></h2>
+                </div>
+            </div>
+            <div class="content">
+                <div class="main-content video">
+                    <iframe class="youtube" src="https://www.youtube.com/embed/cROkvp7mim8" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--Contacts-->
+    <section class="contacts">
+        <div class="container container_contacts">
+            <div class="content map">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab9c42d34aab71674c6b72c8b1fa754fc7703559aeec633be62da329210a46bb0&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+            <div class="content">
+                <div class="main-content contact">
+                    <h2 class="contact-header">Контакты</h2>
+                    <div class="inner-container contact-phone">
+                        <img src="images/telephone.png" alt="telephone" class="inner-img">
+                        <h2 class="inner-text">Телефон</h2>
+                    </div>
+                    <p class="outer-info">+7 (991) 934-13-59</p>
+                    <div class="inner-container location">
+                        <img src="images/point.png" alt="Point" class="inner-img">
+                        <h2 class="inner-text">Наш офис</h2>
+                    </div>
+                    <p class="outer-info address">Электроугли, ул. Центральная 110А</p>
+                    <div class="inner-container email">
+                        <img src="images/email.png" alt="email" class="inner-img">
+                        <h2 class="inner-text">Email</h2>
+                    </div>
+                    <p class="outer-info">hi@ourcompany.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+<script src="js/main.js"></script>
 </html>
