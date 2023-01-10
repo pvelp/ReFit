@@ -1,4 +1,6 @@
+/* SETTINGS */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 * {
 	padding: 0;
 	margin: 0;
@@ -16,11 +18,12 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+
+/* HEADER */
 .header {
     display: flex;
     align-items: center;
     height: 100px;
-    border-bottom: 1px solid #E5E9F2;
     background-color: #161a1e;
 }
 
@@ -61,10 +64,10 @@ body {
     width: 80px;
     height: 80px;
 }
+
 .header-contacts {
     margin-left: auto;
     display: flex;
-
 }
 
 .whatsapp{
@@ -85,4 +88,85 @@ body {
 
 .phone:hover {
     color: #00d5a9;
+}
+
+
+/* MAIN */
+.main{
+
+}
+
+.main-container {
+    background-color: #161a1e;
+    margin: 0 auto;
+    display: flex;
+    height: 965px;
+}
+
+.content {
+    flex: 0 1 100%;
+}
+
+.main-content{
+    background-color: #161a1e;
+    margin-top: 320px;
+    padding-top: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.sub-info {
+    width: 400px;
+    padding-top: 10px;
+}
+
+.main-img {
+    height: 100%;
+    width: 100%;
+}
+
+.main-text {
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 55px;
+}
+
+.main-text.subtext {
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 0;
+}
+.line {
+    margin-top: -5px;
+    margin-left: 20px;
+    border-bottom-style: solid;
+    border-bottom-color: #00d5a9;
+    border-bottom-width: 1px;
+    width: 350px;
+}
+
+.button {
+    margin-top: 25px;
+    background-color: #008074;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: .4s;
+    height: 50px;
+    width: 400px;
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 3px;
+}
+
+.button:hover{
+    background-color: #00d5a9;
+    cursor: pointer;
 }
