@@ -182,7 +182,6 @@ body {
     margin-top: 25%;
     background-color: #FFFFFF;
     padding-left: 30px;
-    /*opacity: 0;*/
 }
 
 .main-text.text_about-us{
@@ -261,4 +260,86 @@ body {
 
 .inner-text.email-addr{
     font-weight: 4000;
+}
+
+/*OUR PROJECTS*/
+.container.container_projects {
+    background-color: #F8F8F8;
+    height: 624px;
+    /*max-width: 1525px;*/
+}
+
+.content.project{
+    margin-top: 224px;
+    overflow: hidden;
+    width: 100%;
+    height: 400px;
+}
+
+.inner-content {
+    height: 400px;
+    background-color: black;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.inner-content:hover{
+    opacity: 0.7;
+    transition: 1s;
+    transform: scale(1.1) ;
+}
+
+.inner-pic{
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    transition: 1s;
+}
+
+.description {
+    position: absolute;
+    margin-top: 100px;
+    text-align: center;
+    width: 100%;
+}
+
+.header_small-pic{
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.button.lear-more{
+    width: 130px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0);
+    border-style: solid;
+    border-color: #00d5a9;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+}
+
+.header_our-projects {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 224px;
+}
+
+.directions {
+    margin-left: 20%;
+    font-size: 45px;
+}
+
+.line-dir{
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 20%;
+    border-bottom-style: solid;
+    border-color: #00d5a9;
+    border-bottom-width: 5px;
+    width: 170px;
 }
