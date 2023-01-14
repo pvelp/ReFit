@@ -318,7 +318,12 @@ body {
     border-style: solid;
     border-color: #00d5a9;
     font-family: 'Poppins', sans-serif;
+    font-weight: 500;
     letter-spacing: 1px;
+}
+
+.button.lear-more:hover{
+    border-color: #008074;
 }
 
 .header_our-projects {
@@ -342,4 +347,21 @@ body {
     border-color: #00d5a9;
     border-bottom-width: 5px;
     width: 170px;
+}
+
+.modalWrapper{
+    margin: auto;
+    display: none;
+    z-index: 60;
+    position: fixed;
+    width: 900px;
+    height: 600px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(23, 26, 30, 0.99);
+    color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
 }
