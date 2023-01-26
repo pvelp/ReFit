@@ -1,56 +1,84 @@
 let btnBuy = document.querySelector("button.button.lear-more.buy");
 let btnService = document.querySelector("button.button.lear-more.service");
 let btnSale = document.querySelector("button.button.lear-more.sale");
-let btns = [btnBuy, btnService, btnSale];
-let modal = document.querySelector(".modalWrapper");
-let close = document.querySelector(".close");
+// let btns = [btnBuy, btnService, btnSale];
+
+let modalBuy = document.querySelector("div.modalWrapper.buy");
+let modalService = document.querySelector("div.modalWrapper.service");
+let modalSale = document.querySelector("div.modalWrapper.sale");
+
+let closeBuy = document.querySelector(".close.Buy");
+let closeService = document.querySelector(".close.Service");
+let closeSale = document.querySelector(".close.Sale");
 let body = document.body;
-let back = document.querySelector(".modal-overlay");
+
+// TODO: сделать универсальнее и меньше
+let backBuy = document.querySelector(".modal-overlay.buyComp");
+let backService = document.querySelector(".modal-overlay.serviceComp");
+let backSale = document.querySelector(".modal-overlay.saleComp");
 
 let innerModalPic = document.querySelector(".innerModalPhoto");
 let text = document.querySelector(".modalText");
 let modalPhoto = document.querySelector(".modalPhoto");
 
-
-btns.forEach(btn => {
-    btn.addEventListener('click', ()=> {
-    if ('buy' in btn.classList){
-        innerModalPic.insertAdjacentHTML('afterbegin',
-            `<img src='images/buy-modal.png' alt='Buying' className='modalPic'>`);
-    }
-    if ('service' in btn.classList){
-        innerModalPic.insertAdjacentHTML('afterbegin',
-            `<img src='images/service-modal.png' alt='Service' className='modalPic'>`);
-    }
-    if ('sale' in btn.classList){
-            innerModalPic.insertAdjacentHTML('afterbegin',
-                `<img src='images/sale-modal.png' alt='Sale' className='modalPic'>`);
-    }
-
-    modal.style.display = 'block';
-    back.style.display = 'flex';
-
-    close.addEventListener('click', ()=>{
-        modal.style.display = 'none';
-        back.style.display = 'none';
-    })
-})})
-
-// btn.addEventListener('click', ()=> {
+// btns.forEach(btn => {
+//     btn.addEventListener('click', ()=> {
 //     modal.style.display = 'block';
 //     back.style.display = 'flex';
-//
+
 //     close.addEventListener('click', ()=>{
 //         modal.style.display = 'none';
 //         back.style.display = 'none';
 //     })
-// })
+// })})
 
-body.addEventListener('click', (event)=>{
-    if (!btns.includes(event.target) &&
-        event.target !== modal &&
-        event.target !== text){
-        modal.style.display = 'none';
-        back.style.display = 'none';
+btnBuy.addEventListener("click", () => {
+    modalBuy.style.display = "block";
+    backBuy.style.display = "flex";
+
+    closeBuy.addEventListener("click", () => {
+        modalBuy.style.display = "none";
+        backBuy.style.display = "none";
+    });
+});
+
+btnService.addEventListener("click", () => {
+    modalService.style.display = "block";
+    backService.style.display = "flex";
+
+    closeService.addEventListener("click", () => {
+        modalService.style.display = "none";
+        backService.style.display = "none";
+    });
+});
+
+btnSale.addEventListener("click", () => {
+    modalSale.style.display = "block";
+    backSale.style.display = "flex";
+
+    closeSale.addEventListener("click", () => {
+        modalSale.style.display = "none";
+        backSale.style.display = "none";
+    });
+});
+
+body.addEventListener("click", (event) => {
+    if (event.target !== btnService) {
+        modalService.style.display = "none";
+        backService.style.display = "none";
     }
-})
+});
+
+body.addEventListener("click", (event) => {
+    if (event.target !== btnSale) {
+        modalSale.style.display = "none";
+        backSale.style.display = "none";
+    }
+});
+
+body.addEventListener("click", (event) => {
+    if (event.target !== btnBuy) {
+        modalBuy.style.display = "none";
+        backBuy.style.display = "none";
+    }
+});
