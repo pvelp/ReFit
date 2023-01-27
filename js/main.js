@@ -17,21 +17,6 @@ let backBuy = document.querySelector(".modal-overlay.buyComp");
 let backService = document.querySelector(".modal-overlay.serviceComp");
 let backSale = document.querySelector(".modal-overlay.saleComp");
 
-let innerModalPic = document.querySelector(".innerModalPhoto");
-let text = document.querySelector(".modalText");
-let modalPhoto = document.querySelector(".modalPhoto");
-
-// btns.forEach(btn => {
-//     btn.addEventListener('click', ()=> {
-//     modal.style.display = 'block';
-//     back.style.display = 'flex';
-
-//     close.addEventListener('click', ()=>{
-//         modal.style.display = 'none';
-//         back.style.display = 'none';
-//     })
-// })})
-
 btnBuy.addEventListener("click", () => {
     modalBuy.style.display = "block";
     backBuy.style.display = "flex";

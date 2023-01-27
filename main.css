@@ -1,5 +1,6 @@
 /* SETTINGS */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;600;700&display=swap');
 
 * {
     padding: 0;
@@ -25,6 +26,7 @@ body {
     align-items: center;
     height: 100px;
     background-color: #161a1e;
+    border-bottom: solid #272b2e 1px;
 }
 
 .header-container {
@@ -32,7 +34,6 @@ body {
     margin: 0 auto;
     display: flex;
     align-items: center;
-    border-bottom: #00d5a9 1px;
 }
 
 .nav {
@@ -131,6 +132,7 @@ body {
     line-height: 55px;
 }
 
+
 .main-text.subtext {
     font-size: 24px;
     font-weight: 600;
@@ -183,6 +185,7 @@ body {
 .main-text.text_about-us {
     color: #ffffff;
     font-weight: 600;
+    font-size: 40px;
 }
 
 .main-content.video {
@@ -459,4 +462,15 @@ body {
     width: 45%;
     margin-left: 100px;
     align-items: center;
+}
+
+.content-slide{
+    width: 50%;
+    height: 100%;
+}
+
+.slider-comment{
+    margin-top: 25%;
+    margin-left: 20px;
+    margin-right: 20px;
 }

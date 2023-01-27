@@ -1,0 +1,96 @@
+.slider {
+    height: 800px;
+    width: 100vw;
+    position: relative;
+}
+.slider-content {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.slide {
+    height: 100%;
+    width: 100%;
+    display:block;
+}
+.slide > div {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color:#fff;
+    text-shadow:0 1px 4px #000;
+}
+.slide > div h2 {
+    font-size: 6em;
+    line-height: 2em;
+    font-weight: bold;
+}
+.slide > div p {
+    font-size: 22px;
+    line-height: 1.4em;
+    font-style: italic;
+}
+
+.sl1 {
+
+    /*background: url(images/service.jpg) no-repeat;*/
+    background-size: cover;
+}
+.sl2 {
+    /*background: url(images/sale.jpg) no-repeat;*/
+    background-size: cover;
+}
+.sl3 {
+    /*background: url(images/secGirl.jpg) no-repeat;*/
+    background-size: cover;
+}
+.sl4 {
+    /*background: url(images/ledi.jpg) no-repeat;*/
+    background-size: cover;
+}
+.more {
+    color: #000;
+    text-decoration: none;
+    padding: 7px 15px;
+    background: #008074;
+    text-shadow:none;
+    line-height: 8em;
+    font-size:16px;
+}
+.more:hover {
+    background: #00d5a9;
+
+}
+.slider-controls {
+    position:absolute;
+    left:0;
+    bottom:30px;
+    text-align:center;
+    width: 100%;
+}
+.slider-controls .control-slide {
+    margin:2px;
+    display:inline-block;
+    width:16px;
+    height:16px;
+    overflow:hidden;
+    text-indent:-9999px;
+    background:#fff;
+    border-radius: 50%;
+    -webkit-border-radius:50%;
+}
+.slider-controls .control-slide:hover {
+    background: #00d5a9;
+    cursor: pointer;
+}
+.slider-controls .control-slide.active {
+    background: #008074;
+}
+
+.slider-content{
+    height: 100%;
+}
+
+.slider-comment{
+}
