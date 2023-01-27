@@ -466,11 +466,65 @@ body {
 
 .content-slide{
     width: 50%;
-    height: 100%;
+    height: 800px;
+    display: flex;
 }
 
 .slider-comment{
-    margin-top: 25%;
+    margin-top: 100px;
     margin-left: 20px;
     margin-right: 20px;
+}
+
+.currPic{
+    display: flex;
+    margin-left: 20%;
+    margin-right: 25%;
+    margin-bottom: 2%;
+    background-color: #00d5a9;
+    width: 700px;
+    height: 450px;
+}
+.picLine{
+    display: flex;
+    height: 110px;
+    width: 610px;
+    /*background-color: #008074;*/
+    margin-left: 25%;
+}
+
+.lineItem{
+    margin-left: 7px;
+    display: flex;
+    height: 100%;
+    width: 145px;
+    transition: 1s;
+    /*border: -;*/
+    /*background-color: red;*/
+    /*background: url("images/s");*/
+}
+
+.lineItem:first-child{
+    margin-left: 0;
+}
+
+.picItem{
+    width: 145px;
+    height: 100px;
+}
+
+
+.picItem:hover{
+    border: #00d5a9 solid 2px;
+    cursor: pointer;
+}
+
+.picItem.active{
+    border: #00d5a9 solid 2px;
+}
+
+.mainPicItem{
+    display: flex;
+    width: 700px;
+    height: 450px;
 }
