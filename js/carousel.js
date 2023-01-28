@@ -1,6 +1,6 @@
 (function ($) {
     let SlideSpeed = 700;
-    let TimeOut = 5000;
+    let TimeOut = 10000;
     $(document).ready(function(e) {
         $(".slide").css(
             {"position" : "absolute",
