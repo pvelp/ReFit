@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReFit</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="slider.css">
-    <!--    <link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/splide.min.css">-->
-    <title>ReFit</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/carousel.js"></script>
     <script src="js/scroller.js"></script>
+    <script src="js/innerSlider.js"></script>
     <script>
         new WOW().init();
     </script>
@@ -55,10 +55,14 @@
                     <h3 class="main-text subtext">с доставкой по России и СНГ</h3>
                     <div class="line"></div>
                 </div>
-                <button class="button"
+                <button class="main-btn assort"
                         onclick="document.location='https://www.avito.ru/user/68c77e0d8db056d1baf53852c1ea4133/profile?src=sharing'">
-                    Полный
-                    ассортимент
+                    <span class="circle" aria-hidden="true">
+  <span class="icon arrow"></span>
+  </span>
+                    <span class="button-text">Полный ассоритимент</span>
+<!--                    Полный-->
+<!--                    ассортимент-->
                 </button>
             </div>
         </div>
@@ -134,9 +138,9 @@
         <div class="slide sl1">
             <div class="content-slide">
                 <div class="slider-comment">
-                    <h2 class="slider__header" style="font-size: 30px">Клуб детской гребли AAACLUB, город Сочи
+                    <h2 class="slider__header" style="font-size: 39px">Клуб детской гребли AAACLUB, город Сочи
                     </h2>
-                    <p>«Выражаю огромную благодарность ребятам из "ReFit" Очень своевременно помогли с укомплектовкой
+                    <p class="sliderText">«Выражаю огромную благодарность ребятам из "ReFit" Очень своевременно помогли с укомплектовкой
                         силовых тренажеров в спортивный клуб АААClub.
                         Ребята Вы реально лучшие, в кратчайшие сроки, буквально за неделю смогли решить вопрос с
                         поставкой
@@ -151,20 +155,28 @@
             </div>
             <div class="content-slide">
                 <div class="currPic slide1">
-                    <img src="images/Sochi.jpg" alt="TMP2" class="mainPicItem">
+                    <img src="images/Sochi.jpg" alt="TMP2" class="mainPicItem" id="mainSliderPicItem1">
                 </div>
                 <div class="picLine slide1">
                     <div class="lineItem slide1 pic1">
-                        <img src="images/Sochi.jpg" alt="TMP" class="picItem">
+                        <img src="images/Sochi.jpg" alt="TMP" class="picItem"
+                             onclick="let tmp = document.getElementById('mainSliderPicItem1');
+                             tmp.src=this.src;">
                     </div>
                     <div class="lineItem slide1 pic2">
-                        <img src="images/Sochi.jpg" alt="TMP" class="picItem">
+                        <img src="images/Sochi.jpg" alt="TMP" class="picItem"
+                             onclick="let tmp = document.getElementById('mainSliderPicItem1');
+                             tmp.src=this.src;">
                     </div>
                     <div class="lineItem slide1 pic3">
-                        <img src="images/Sochi.jpg" alt="TMP" class="picItem">
+                        <img src="images/Sochi.jpg" alt="TMP" class="picItem"
+                             onclick="let tmp = document.getElementById('mainSliderPicItem1');
+                             tmp.src=this.src;">
                     </div>
                     <div class="lineItem slide1 pic4">
-                        <img src="images/Sochi.jpg" alt="TMP" class="picItem">
+                        <img src="images/Sochi.jpg" alt="TMP" class="picItem"
+                             onclick="let tmp = document.getElementById('mainSliderPicItem1');
+                             tmp.src=this.src;">
                     </div>
                 </div>
             </div>
@@ -172,30 +184,38 @@
         <div class="slide sl2">
             <div class="content-slide">
                 <div class="slider-comment">
-                    <h2 class="slider__header" style="font-size: 30px">Фитнес клуб 100%, город Ярославль</h2>
-                    <p>«Работали с организацией и приобрели целую линейку тренажеров для нашего клуба. Понравилось, что
+                    <h2 class="slider__header" style="font-size: 45px">Фитнес клуб 100%, Ярославль</h2>
+                    <p class="sliderText">«Работали с организацией и приобрели целую линейку тренажеров для нашего клуба. Понравилось, что
                         ребята подошли к делу профессионально и, самое главное, выполнили все обещанные обязательства.
                         Будем
-                        обращаться, и, думаю, еще не раз»</p><a
-                        href="#content_sl" class="more" onclick="return anchorScroller(this)">Далее</a>
+                        обращаться, и, думаю, еще не раз»</p>
+                    <a href="#content_sl" class="more" onclick="return anchorScroller(this)">Далее</a>
                 </div>
             </div>
             <div class="content-slide">
                 <div class="currPic slide2">
-                    <img src="images/Yaroslavl.jpg" alt="TMP2" class="mainPicItem">
+                    <img src="images/Yaroslavl.jpg" alt="TMP2" class="mainPicItem" id="mainSliderPicItem2">
                 </div>
                 <div class="picLine slide2">
-                    <div class="lineItem slide2 pic1">
-                        <img src="images/Yaroslavl.jpg" alt="TMP" class="picItem">
+                    <div class="lineItem slide2">
+                        <img src="images/Yaroslavl.jpg" alt="TMP" class="picItem" id="pic1"
+                             onclick="let tmp = document.getElementById('mainSliderPicItem2');
+                             tmp.src=this.src;Highlight(this);">
                     </div>
-                    <div class="lineItem slide2 pic2">
-                        <img src="images/yar2.jpg" alt="TMP" class="picItem">
+                    <div class="lineItem slide2">
+                        <img src="images/yar2.jpg" alt="TMP" class="picItem" id="pic2"
+                             onclick="let tmp = document.getElementById('mainSliderPicItem2');
+                             tmp.src=this.src;Highlight(this);">
                     </div>
-                    <div class="lineItem slide2 pic3">
-                        <img src="images/Yaroslavl.jpg" alt="TMP" class="picItem">
+                    <div class="lineItem slide2">
+                        <img src="images/Yaroslavl.jpg" alt="TMP" class="picItem" id="pic3"
+                             onclick="let tmp = document.getElementById('mainSliderPicItem2');
+                             tmp.src=this.src;Highlight(this);">
                     </div>
-                    <div class="lineItem slide2 pic4">
-                        <img src="images/yar2.jpg" alt="TMP" class="picItem">
+                    <div class="lineItem slide2">
+                        <img src="images/yar2.jpg" alt="TMP" class="picItem" id="pic4"
+                             onclick="let tmp = document.getElementById('mainSliderPicItem2');
+                             tmp.src=this.src;Highlight(this);">
                     </div>
                 </div>
             </div>
@@ -289,7 +309,6 @@
         </div>
     </div>
 </div>
-
 <div class="modal-overlay buyComp"></div>
 <div class="modal-overlay serviceComp"></div>
 <div class="modal-overlay saleComp"></div>
@@ -297,3 +316,5 @@
 </body>
 
 </html>
+
+<!--https://learn.javascript.ru/event-delegation-->
