@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta name="viewport" content="width=1170">
     <title>ReFit</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="slider.css">
@@ -13,7 +14,6 @@
     <script src="js/wow.min.js"></script>
     <script src="js/carousel.js"></script>
     <script src="js/scroller.js"></script>
-    <script src="js/innerSlider.js"></script>
     <script>
         new WOW().init();
     </script>
@@ -27,10 +27,10 @@
             <img src="images/logo.jpeg" alt="logo" class="pic">
         </div>
         <nav class="nav">
-            <a href="#" class="nav-link">Главная</a>
-            <a href="#" class="nav-link">О нас</a>
-            <a href="#" class="nav-link">Проекты</a>
-            <a href="#" class="nav-link">Контакты</a>
+            <a href="#Main" class="nav-link">Главная</a>
+            <a href="#About-us" class="nav-link">О нас</a>
+            <a href="#Projects" class="nav-link">Проекты</a>
+            <a href="#Contacts" class="nav-link">Контакты</a>
         </nav>
         <div class="header-contacts">
             <a href="https://wa.me/message/B7PFTLCLXRCRL1">
@@ -44,6 +44,7 @@
 </header>
 
 <div class="testMain">
+    <a name="Main"></a>
     <div class="container test">
         <img src="images/newMainPhoto.jpg" alt="BLANC" class=" testBack">
         <div class="content testContent">
@@ -61,8 +62,6 @@
   <span class="icon arrow"></span>
   </span>
                     <span class="button-text">Полный ассоритимент</span>
-<!--                    Полный-->
-<!--                    ассортимент-->
                 </button>
             </div>
         </div>
@@ -72,6 +71,7 @@
 
 <!--ABOUT US-->
 <section class="about-us">
+    <a name="About-us"></a>
     <div class="container container_about-us">
         <div class="content">
             <div class="main-content content_about-us">
@@ -97,6 +97,7 @@
 
 <!--OUR PROJECTS-->
 <section class="our-projects wow animate__animated animate__fadeInUp">
+    <a name="Projects"></a>
     <div class="container container_projects">
         <div class="header_our-projects">
             <h2 class="directions ">Наши направления работы</h2>
@@ -135,12 +136,16 @@
 <!--CAROUSEL-->
 <section class="slider">
     <div class="slider-content">
+        <div class="slideHead">
+            <h2 class="MainSliderHeader">Отзывы</h2>
+            <span class="line-dir sliderLine"></span></div>
         <div class="slide sl1">
             <div class="content-slide">
                 <div class="slider-comment">
-                    <h2 class="slider__header" style="font-size: 39px">Клуб детской гребли AAACLUB, город Сочи
+                    <h2 class="slider__header" style="font-size: 30px">Клуб детской гребли AAACLUB, город Сочи
                     </h2>
-                    <p class="sliderText">«Выражаю огромную благодарность ребятам из "ReFit" Очень своевременно помогли с укомплектовкой
+                    <p class="sliderText">«Выражаю огромную благодарность ребятам из "ReFit" Очень своевременно помогли
+                        с укомплектовкой
                         силовых тренажеров в спортивный клуб АААClub.
                         Ребята Вы реально лучшие, в кратчайшие сроки, буквально за неделю смогли решить вопрос с
                         поставкой
@@ -150,8 +155,10 @@
                         и работа по предоплате с другими поставщиками.
                         Искренне желаю Вам процветания и больше узнаваемости, однозначно буду рекомендовать Вас
                         спортивным
-                        объектам. 👍💪🏋️‍♂️»</p><a href="#content_sl" class="more"
-                                                 onclick="return anchorScroller(this)">Далее</a></div>
+                        объектам. 👍💪🏋️‍♂️»</p>
+                    <button class="sliderBtn"> WhatsApp
+                    </button>
+                </div>
             </div>
             <div class="content-slide">
                 <div class="currPic slide1">
@@ -184,12 +191,14 @@
         <div class="slide sl2">
             <div class="content-slide">
                 <div class="slider-comment">
-                    <h2 class="slider__header" style="font-size: 45px">Фитнес клуб 100%, Ярославль</h2>
-                    <p class="sliderText">«Работали с организацией и приобрели целую линейку тренажеров для нашего клуба. Понравилось, что
+                    <h2 class="slider__header" style="font-size: 30px">Фитнес клуб 100%, Ярославль</h2>
+                    <p class="sliderText">«Работали с организацией и приобрели целую линейку тренажеров для нашего
+                        клуба. Понравилось, что
                         ребята подошли к делу профессионально и, самое главное, выполнили все обещанные обязательства.
                         Будем
                         обращаться, и, думаю, еще не раз»</p>
-                    <a href="#content_sl" class="more" onclick="return anchorScroller(this)">Далее</a>
+                    <button class="sliderBtn"> WhatsApp
+                    </button>
                 </div>
             </div>
             <div class="content-slide">
@@ -200,22 +209,22 @@
                     <div class="lineItem slide2">
                         <img src="images/Yaroslavl.jpg" alt="TMP" class="picItem" id="pic1"
                              onclick="let tmp = document.getElementById('mainSliderPicItem2');
-                             tmp.src=this.src;Highlight(this);">
+                             tmp.src=this.src;">
                     </div>
                     <div class="lineItem slide2">
                         <img src="images/yar2.jpg" alt="TMP" class="picItem" id="pic2"
                              onclick="let tmp = document.getElementById('mainSliderPicItem2');
-                             tmp.src=this.src;Highlight(this);">
+                             tmp.src=this.src;">
                     </div>
                     <div class="lineItem slide2">
                         <img src="images/Yaroslavl.jpg" alt="TMP" class="picItem" id="pic3"
                              onclick="let tmp = document.getElementById('mainSliderPicItem2');
-                             tmp.src=this.src;Highlight(this);">
+                             tmp.src=this.src;">
                     </div>
                     <div class="lineItem slide2">
                         <img src="images/yar2.jpg" alt="TMP" class="picItem" id="pic4"
                              onclick="let tmp = document.getElementById('mainSliderPicItem2');
-                             tmp.src=this.src;Highlight(this);">
+                             tmp.src=this.src;">
                     </div>
                 </div>
             </div>
@@ -225,12 +234,13 @@
 
 <!--Contacts-->
 <section class="contacts">
+    <a name="Contacts"></a>
     <div class="container container_contacts">
         <div class="content map">
             <script type="text/javascript" charset="utf-8" async
-                    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab9c42d34aab71674c6b72c8b1fa754fc7703559aeec633be62da329210a46bb0&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+                    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab9c42d34aab71674c6b72c8b1fa754fc7703559aeec633be62da329210a46bb0&amp;width=100%&amp;height=90%&amp;lang=ru_RU&amp;scroll=true"></script>
         </div>
-        <div class="content">
+        <div class="content contacts">
             <div class="main-content contact">
                 <h2 class="contact-header">Контакты</h2>
                 <div class="inner-container contact-phone">
@@ -253,7 +263,6 @@
     </div>
 </section>
 
-<!--TODO тут надо пересмотреть и свернуть селекторами и js скриптом-->
 <div class="modalWrapper buy">
     <div class="close Buy">&times;</div>
     <div class="modalContent">
@@ -314,7 +323,4 @@
 <div class="modal-overlay saleComp"></div>
 <script src="js/main.js"></script>
 </body>
-
 </html>
-
-<!--https://learn.javascript.ru/event-delegation-->

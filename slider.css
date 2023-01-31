@@ -1,9 +1,12 @@
 .slider {
+    display: flex;
     height: 800px;
     width: 100vw;
     position: relative;
 }
 .slider-content {
+    display: flex;
+    margin-top: 80px;
     height: 100%;
     overflow: hidden;
     position: relative;
@@ -12,7 +15,7 @@
 .slide {
     height: 100%;
     width: 100%;
-    display:block;
+    display:flex;
 }
 .slide > div {
     display: table-cell;
