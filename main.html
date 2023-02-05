@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-    <meta name="viewport" content="width=1170">
+    <meta name="viewport" content="width=1550">
     <title>ReFit</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="slider.css">
@@ -47,7 +47,10 @@
     <a name="Main"></a>
     <div class="container test">
         <img src="images/newMainPhoto.jpg" alt="BLANC" class=" testBack">
-        <div class="content testContent">
+        <img src="images/circle1.png" alt="" class="circle circle_pos1">
+        <img src="images/circle2.png" alt="" class="circle circle_pos2">
+        <img src="images/circle3.png" alt="" class="circle circle_pos3">
+        <div class="content testContent">стоп
             <div class="main-content testMainContent">
                 <h2 class="main-text testText"><span
                         style="color: #00d5a9; font-size: 52px; font-weight: 700;">П</span>рофессиональные
@@ -56,12 +59,11 @@
                     <h3 class="main-text subtext">с доставкой по России и СНГ</h3>
                     <div class="line"></div>
                 </div>
-                <button class="main-btn assort"
-                        onclick="document.location='https://www.avito.ru/user/68c77e0d8db056d1baf53852c1ea4133/profile?src=sharing'">
+                <button class="main-btn assort" >
                     <span class="circle" aria-hidden="true">
   <span class="icon arrow"></span>
   </span>
-                    <span class="button-text">Полный ассоритимент</span>
+                    <a href="https://www.avito.ru/user/68c77e0d8db056d1baf53852c1ea4133/profile?src=sharing" target="_blank"><span class="button-text">Полный ассортимент</span></a>
                 </button>
             </div>
         </div>
@@ -139,29 +141,30 @@
         <div class="slideHead">
             <h2 class="MainSliderHeader">Отзывы</h2>
             <span class="line-dir sliderLine"></span></div>
+        
         <div class="slide sl1">
             <div class="content-slide comment_part">
                 <div class="slider-comment">
                     <div class="comment-content">
                         <h2 class="slider__header" style="font-size: 25px">Клуб детской гребли AAACLUB, город Сочи
                         </h2>
-<!--                        <div class="starsLine">-->
-<!--                            <div class="starsPlace">-->
-<!--                                <img src="images/star1.svg" alt="star" class="star">-->
-<!--                            </div>-->
-<!--                            <div class="starsPlace">-->
-<!--                                <img src="images/star1.svg" alt="star" class="star">-->
-<!--                            </div>-->
-<!--                            <div class="starsPlace">-->
-<!--                                <img src="images/star1.svg" alt="star" class="star">-->
-<!--                            </div>-->
-<!--                            <div class="starsPlace">-->
-<!--                                <img src="images/star1.svg" alt="star" class="star">-->
-<!--                            </div>-->
-<!--                            <div class="starsPlace">-->
-<!--                                <img src="images/star1.svg" alt="star" class="star">-->
-<!--                            </div>-->
-<!--                        </div>-->
+                        <!--                        <div class="starsLine">-->
+                        <!--                            <div class="starsPlace">-->
+                        <!--                                <img src="images/star1.svg" alt="star" class="star">-->
+                        <!--                            </div>-->
+                        <!--                            <div class="starsPlace">-->
+                        <!--                                <img src="images/star1.svg" alt="star" class="star">-->
+                        <!--                            </div>-->
+                        <!--                            <div class="starsPlace">-->
+                        <!--                                <img src="images/star1.svg" alt="star" class="star">-->
+                        <!--                            </div>-->
+                        <!--                            <div class="starsPlace">-->
+                        <!--                                <img src="images/star1.svg" alt="star" class="star">-->
+                        <!--                            </div>-->
+                        <!--                            <div class="starsPlace">-->
+                        <!--                                <img src="images/star1.svg" alt="star" class="star">-->
+                        <!--                            </div>-->
+                        <!--                        </div>-->
                         <p class="sliderText">«Выражаю огромную благодарность ребятам из "ReFit" Очень своевременно
                             помогли
                             с укомплектовкой
@@ -208,6 +211,7 @@
                 </div>
             </div>
         </div>
+
         <div class="slide sl2">
             <div class="content-slide">
                 <div class="slider-comment">
@@ -227,23 +231,65 @@
                 </div>
                 <div class="picLine slide2">
                     <div class="lineItem slide2">
-                        <img src="images/Yaroslavl.jpg" alt="TMP" class="picItem" id="pic1"
+                        <img src="images/Yaroslavl.jpg" alt="TMP" class="picItem"
                              onclick="let tmp = document.getElementById('mainSliderPicItem2');
                              tmp.src=this.src;">
                     </div>
                     <div class="lineItem slide2">
-                        <img src="images/yar2.jpg" alt="TMP" class="picItem" id="pic2"
+                        <img src="images/yar2.jpg" alt="TMP" class="picItem"
                              onclick="let tmp = document.getElementById('mainSliderPicItem2');
                              tmp.src=this.src;">
                     </div>
                     <div class="lineItem slide2">
-                        <img src="images/Yaroslavl.jpg" alt="TMP" class="picItem" id="pic3"
+                        <img src="images/Yaroslavl.jpg" alt="TMP" class="picItem"
                              onclick="let tmp = document.getElementById('mainSliderPicItem2');
                              tmp.src=this.src;">
                     </div>
                     <div class="lineItem slide2">
-                        <img src="images/yar2.jpg" alt="TMP" class="picItem" id="pic4"
+                        <img src="images/yar2.jpg" alt="TMP" class="picItem"
                              onclick="let tmp = document.getElementById('mainSliderPicItem2');
+                             tmp.src=this.src;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide sl3">
+            <div class="content-slide">
+                <div class="slider-comment">
+                    <h2 class="slider__header" style="font-size: 30px">Фитнес клуб 100%, Ярославль</h2>
+                    <p class="sliderText">«Работали с организацией и приобрели целую линейку тренажеров для нашего
+                        клуба. Понравилось, что
+                        ребята подошли к делу профессионально и, самое главное, выполнили все обещанные обязательства.
+                        Будем
+                        обращаться, и, думаю, еще не раз»</p>
+                    <button class="sliderBtn"> WhatsApp
+                    </button>
+                </div>
+            </div>
+            <div class="content-slide">
+                <div class="currPic slide3">
+                    <img src="images/Yaroslavl.jpg" alt="TMP2" class="mainPicItem" id="mainSliderPicItem3">
+                </div>
+                <div class="picLine slide3">
+                    <div class="lineItem slide3">
+                        <img src="images/Yaroslavl.jpg" alt="TMP" class="picItem"
+                             onclick="let tmp = document.getElementById('mainSliderPicItem3');
+                             tmp.src=this.src;">
+                    </div>
+                    <div class="lineItem slide3">
+                        <img src="images/yar2.jpg" alt="TMP" class="picItem"
+                             onclick="let tmp = document.getElementById('mainSliderPicItem3');
+                             tmp.src=this.src;">
+                    </div>
+                    <div class="lineItem slide3">
+                        <img src="images/Yaroslavl.jpg" alt="TMP" class="picItem"
+                             onclick="let tmp = document.getElementById('mainSliderPicItem3');
+                             tmp.src=this.src;">
+                    </div>
+                    <div class="lineItem slide3">
+                        <img src="images/yar2.jpg" alt="TMP" class="picItem"
+                             onclick="let tmp = document.getElementById('mainSliderPicItem3');
                              tmp.src=this.src;">
                     </div>
                 </div>
@@ -291,7 +337,7 @@
     <div class="modalContent">
         <div class="modalInner">
             <div class="innerModalPic">
-                <img src="images/buy-modal.png" alt="Buying" class="modalPic">
+                <img src="images/pay.png" alt="Buying" class="modalPic">
             </div>
             <div class="modalText">
                 <p><span style="color: #00d5a9; font-size: 50px; font-weight: 600;">Е</span>сли вы хотите приобрести
@@ -305,7 +351,7 @@
 </span>
                     <ul>
                         <li>
-                            <a href="https://t.me/senyaa17" target="_blank">
+                            <a href="https://t.me/refit_team" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff"
                                      class="bi bi-telegram icon-shere" viewBox="0 0 16 16">
                                     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"></path>
@@ -332,17 +378,16 @@
         </div>
     </div>
 </div>
-
 <div class="modalWrapper service">
     <div class="close Service">&times;</div>
     <div class="modalContent">
         <div class="modalInner">
             <div class="innerModalPic">
-                <img src="images/service-modal.png" alt="Service" class="modalPic">
+                <img src="images/setting2.png" alt="Service" class="modalPic">
             </div>
             <div class="modalText">
                 <p><span style="color: #00d5a9; font-size: 50px; font-weight: 600;">R</span>eFit также занимается
-                    выездными мероприятию по обслуживанию профессионального спортивного оборудования.</p>
+                    выездными мероприятиями по обслуживанию профессионального спортивного оборудования.</p>
                 <button class="btn_contact">
                     <span>Связь с нами</span><span>
   <svg height="18" width="18" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024" class="icon">
@@ -352,7 +397,7 @@
 </span>
                     <ul>
                         <li>
-                            <a href="https://t.me/senyaa17" target="_blank">
+                            <a href="https://t.me/refit_team" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff"
                                      class="bi bi-telegram icon-shere" viewBox="0 0 16 16">
                                     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"></path>
@@ -379,17 +424,16 @@
         </div>
     </div>
 </div>
-
 <div class="modalWrapper sale">
     <div class="close Sale">&times;</div>
     <div class="modalContent">
         <div class="modalInner">
             <div class="innerModalPic salePic">
-                <img src="images/sale-modal.png" alt="Sale" class="modalPic">
+                <img src="images/sale2.png" alt="Sale" class="modalPic">
             </div>
             <div class="modalText saleText">
-                <p><span style="color: #00d5a9; font-size: 50px; font-weight: 600;">П</span>родажа тренажеров.
-                    Помимо приобретения профессиональных спортивных
+                <p><span style="color: #00d5a9; font-size: 50px; font-weight: 600;">П</span>омимо приобретения
+                    профессиональных спортивных
                     тренажеров отличного качества и их обслуживания. ReFit занимается скупкой тренажеров, бывших в
                     употреблении.</p>
                 <button class="btn_contact">
@@ -401,7 +445,7 @@
 </span>
                     <ul>
                         <li>
-                            <a href="https://t.me/senyaa17" target="_blank">
+                            <a href="https://t.me/refit_team" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff"
                                      class="bi bi-telegram icon-shere" viewBox="0 0 16 16">
                                     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"></path>
@@ -418,7 +462,8 @@
                         </li>
                         <li>
                             <a href="mailto: Refit.team@yandex.ru" target="_blank"
-                               style="text-decoration: none; color: white; font-size: 25px">@</a></li>
+                               style="text-decoration: none; color: white; font-size: 22px; font-weight: bold">@</a>
+                        </li>
                     </ul>
                 </button>
             </div>

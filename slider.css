@@ -6,7 +6,6 @@
 }
 .slider-content {
     display: flex;
-    margin-top: 80px;
     height: 100%;
     overflow: hidden;
     position: relative;
