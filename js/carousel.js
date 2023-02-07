@@ -1,19 +1,20 @@
 (function ($) {
     let SlideSpeed = 700;
-    let TimeOut = 10000;
+    let TimeOut = 15000;
     $(document).ready(function(e) {
         $(".slide").css(
             {"position" : "absolute",
                 "top":'0', "left": '0'}).hide().eq(0).show();
         let slideNum = 0;
         let slideTime;
-        let slideCount = $(".slider-content .slide").size();
+        let slideCount = $(".slide").size();
         let animSlide = function(arrow){
             clearTimeout(slideTime);
             $(".slide").eq(slideNum).fadeOut(SlideSpeed);
             if(arrow === "next"){
                 if(slideNum === (slideCount-1)){slideNum=0;}
                 else{slideNum++}
+                console.log(slideNum, slideCount);
             }
             else if(arrow === "prew")
             {

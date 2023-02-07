@@ -1,11 +1,11 @@
 .slider {
-    display: flex;
-    height: 800px;
+    /*display: flex;*/
+    height: 830px;
     width: 100vw;
     position: relative;
 }
 .slider-content {
-    display: flex;
+    /*display: flex;*/
     height: 100%;
     overflow: hidden;
     position: relative;
@@ -14,7 +14,7 @@
 .slide {
     height: 100%;
     width: 100%;
-    display:flex;
+    display: block;
 }
 .slide > div {
     display: table-cell;
@@ -24,12 +24,9 @@
     text-shadow:0 1px 4px #000;
 }
 .slide > div h2 {
-    /*font-size: 6em;*/
     line-height: 2em;
-    /*font-weight: bold;*/
 }
 .slide > div p {
-    /*font-size: 22px;*/
     line-height: 1.4em;
     font-style: italic;
 }
@@ -74,8 +71,8 @@
 .slider-controls .control-slide {
     margin:2px;
     display:inline-block;
-    width:16px;
-    height:16px;
+    width:25px;
+    height:25px;
     overflow:hidden;
     text-indent:-9999px;
     background:#fff;
@@ -92,7 +89,4 @@
 
 .slider-content{
     height: 100%;
-}
-
-.slider-comment{
 }

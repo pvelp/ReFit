@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
     <meta name="viewport" content="width=1550">
     <title>ReFit</title>
     <link rel="stylesheet" href="main.css">
@@ -14,6 +13,7 @@
     <script src="js/wow.min.js"></script>
     <script src="js/carousel.js"></script>
     <script src="js/scroller.js"></script>
+    <script src="js/stickyHeader.js"></script>
     <script>
         new WOW().init();
     </script>
@@ -21,30 +21,32 @@
 
 <body>
 <!--HEADER-->
-<header class="header">
+<header class="header" id="navbar">
     <div class="header-container">
         <div class="logo">
             <img src="images/logo.jpeg" alt="logo" class="pic">
         </div>
         <nav class="nav">
-            <a href="#Main" class="nav-link">Главная</a>
-            <a href="#About-us" class="nav-link">О нас</a>
-            <a href="#Projects" class="nav-link">Проекты</a>
-            <a href="#Contacts" class="nav-link">Контакты</a>
+            <ul>
+                <li> <a href="#Main" class="nav-link active">Главная</a></li>
+                <li><a href="#About-us" class="nav-link">О нас</a></li>
+                <li><a href="#Projects" class="nav-link">Проекты</a></li>
+                <li><a href="#Contacts" class="nav-link">Контакты</a></li>
+            </ul>
         </nav>
         <div class="header-contacts">
             <a href="https://wa.me/message/B7PFTLCLXRCRL1" target="_blank">
                 <img src="images/whatsapp.png" alt="what's app" class="whatsapp">
             </a>
             <div class="header-number">
-                <a href="tel:+7 (991) 934-13-59" class="anyLink">+7 (991) 934-13-59</a>
+                <a href="tel:+7 (495) 488-69-63" class="anyLink">+7 (495) 488-69-63</a>
             </div>
         </div>
     </div>
 </header>
 
-<div class="testMain">
-    <a name="Main"></a>
+<section class="testMain section" id="Main">
+<!--    <a name="Main"></a>-->
     <div class="container test">
         <img src="images/newMainPhoto.jpg" alt="BLANC" class=" testBack">
         <img src="images/circle1.png" alt="" class="circle circle_pos1">
@@ -63,19 +65,22 @@
                     <span class="circle" aria-hidden="true">
   <span class="icon arrow"></span>
   </span>
-                    <a href="https://www.avito.ru/user/68c77e0d8db056d1baf53852c1ea4133/profile?src=sharing" target="_blank"><span class="button-text">Полный ассортимент</span></a>
+                    <a href="https://wa.me/message/B7PFTLCLXRCRL1" target="_blank"><span class="button-text">Полный ассортимент</span></a>
                 </button>
             </div>
         </div>
     </div>
-</div>
+</section>
 <!--MAIN-->
 
 <!--ABOUT US-->
-<section class="about-us">
-    <a name="About-us"></a>
+<section class="about-us section" id="About-us">
     <div class="container container_about-us">
         <div class="content">
+            <img src="images/barbel.png" alt="" class="device dev_5 wow animate__animated animate__backInLeft">
+            <img src="images/workout.png" alt="" class="device dev_1 wow animate__animated animate__backInRight">
+            <img src="images/dumbbell.png" alt="" class="device dev_2 wow animate__animated animate__backInLeft">
+            <img src="images/dumbbell%20(1).png" alt="" class="device dev_3 wow animate__animated animate__backInRight">
             <div class="main-content content_about-us">
                 <h2 class="main-text text_about-us wow animate__animated animate__fadeInLeft"><span
                         style="color: #00d5a9; font-size: 50px; font-weight: 600;">ReFit</span>
@@ -98,8 +103,7 @@
 </section>
 
 <!--OUR PROJECTS-->
-<section class="our-projects wow animate__animated animate__fadeInUp">
-    <a name="Projects"></a>
+<section class="our-projects wow animate__animated animate__fadeInUp section" id="Projects">
     <div class="container container_projects">
         <div class="header_our-projects">
             <h2 class="directions ">Наши направления работы</h2>
@@ -110,7 +114,7 @@
                 <img src="images/buy.jpg" alt="" class="inner-pic">
                 <div class="description">
                     <h2 class="header_small-pic">Покупка тренажеров</h2>
-                    <button class="button lear-more buy">LEARN MORE</button>
+                    <button class="button lear-more buy">ПОДРОБНЕЕ</button>
                 </div>
             </div>
         </div>
@@ -119,7 +123,7 @@
                 <img src="images/service.jpg" alt="" class="inner-pic">
                 <div class="description">
                     <h2 class="header_small-pic">Сервис</h2>
-                    <button class="button lear-more service">LEARN MORE</button>
+                    <button class="button lear-more service">ПОДРОБНЕЕ</button>
                 </div>
             </div>
         </div>
@@ -128,7 +132,7 @@
                 <img src="images/sale.jpg" alt="" class="inner-pic">
                 <div class="description">
                     <h2 class="header_small-pic">Продажа тренажеров</h2>
-                    <button class="button lear-more sale">LEARN MORE</button>
+                    <button class="button lear-more sale">ПОДРОБНЕЕ</button>
                 </div>
             </div>
         </div>
@@ -141,30 +145,12 @@
         <div class="slideHead">
             <h2 class="MainSliderHeader">Отзывы</h2>
             <span class="line-dir sliderLine"></span></div>
-        
         <div class="slide sl1">
-            <div class="content-slide comment_part">
+            <div class="content-slide">
                 <div class="slider-comment">
                     <div class="comment-content">
-                        <h2 class="slider__header" style="font-size: 25px">Клуб детской гребли AAACLUB, город Сочи
+                        <h2 class="slider__header" style="font-size: 25px">Клуб детской гребли AAACLUB, г. Сочи
                         </h2>
-                        <!--                        <div class="starsLine">-->
-                        <!--                            <div class="starsPlace">-->
-                        <!--                                <img src="images/star1.svg" alt="star" class="star">-->
-                        <!--                            </div>-->
-                        <!--                            <div class="starsPlace">-->
-                        <!--                                <img src="images/star1.svg" alt="star" class="star">-->
-                        <!--                            </div>-->
-                        <!--                            <div class="starsPlace">-->
-                        <!--                                <img src="images/star1.svg" alt="star" class="star">-->
-                        <!--                            </div>-->
-                        <!--                            <div class="starsPlace">-->
-                        <!--                                <img src="images/star1.svg" alt="star" class="star">-->
-                        <!--                            </div>-->
-                        <!--                            <div class="starsPlace">-->
-                        <!--                                <img src="images/star1.svg" alt="star" class="star">-->
-                        <!--                            </div>-->
-                        <!--                        </div>-->
                         <p class="sliderText">«Выражаю огромную благодарность ребятам из "ReFit" Очень своевременно
                             помогли
                             с укомплектовкой
@@ -179,7 +165,7 @@
                             спортивным
                             объектам. 👍💪🏋️‍♂️»</p>
                     </div>
-                    <button class="sliderBtn"> WhatsApp
+                    <button class="sliderBtn" onclick="window.location.href = 'https://www.avito.ru/user/68c77e0d8db056d1baf53852c1ea4133/profile?src=sharing'">Все отзывы
                     </button>
                 </div>
             </div>
@@ -187,27 +173,6 @@
                 <div class="currPic slide1">
                     <img src="images/Sochi.jpg" alt="TMP2" class="mainPicItem" id="mainSliderPicItem1">
                 </div>
-                <div class="picLine slide1">
-                    <div class="lineItem slide1 pic1">
-                        <img src="images/Sochi.jpg" alt="TMP" class="picItem"
-                             onclick="let tmp = document.getElementById('mainSliderPicItem1');
-                             tmp.src=this.src;">
-                    </div>
-                    <div class="lineItem slide1 pic2">
-                        <img src="images/Sochi.jpg" alt="TMP" class="picItem"
-                             onclick="let tmp = document.getElementById('mainSliderPicItem1');
-                             tmp.src=this.src;">
-                    </div>
-                    <div class="lineItem slide1 pic3">
-                        <img src="images/Sochi.jpg" alt="TMP" class="picItem"
-                             onclick="let tmp = document.getElementById('mainSliderPicItem1');
-                             tmp.src=this.src;">
-                    </div>
-                    <div class="lineItem slide1 pic4">
-                        <img src="images/Sochi.jpg" alt="TMP" class="picItem"
-                             onclick="let tmp = document.getElementById('mainSliderPicItem1');
-                             tmp.src=this.src;">
-                    </div>
                 </div>
             </div>
         </div>
@@ -215,13 +180,13 @@
         <div class="slide sl2">
             <div class="content-slide">
                 <div class="slider-comment">
-                    <h2 class="slider__header" style="font-size: 30px">Фитнес клуб 100%, Ярославль</h2>
+                    <h2 class="slider__header" style="font-size: 30px">Фитнес клуб 100%, г. Ярославль</h2>
                     <p class="sliderText">«Работали с организацией и приобрели целую линейку тренажеров для нашего
                         клуба. Понравилось, что
                         ребята подошли к делу профессионально и, самое главное, выполнили все обещанные обязательства.
                         Будем
                         обращаться, и, думаю, еще не раз»</p>
-                    <button class="sliderBtn"> WhatsApp
+                    <button class="sliderBtn" onclick="window.location.href = 'https://www.avito.ru/user/68c77e0d8db056d1baf53852c1ea4133/profile?src=sharing'"> Все отзывы
                     </button>
                 </div>
             </div>
@@ -240,16 +205,6 @@
                              onclick="let tmp = document.getElementById('mainSliderPicItem2');
                              tmp.src=this.src;">
                     </div>
-                    <div class="lineItem slide2">
-                        <img src="images/Yaroslavl.jpg" alt="TMP" class="picItem"
-                             onclick="let tmp = document.getElementById('mainSliderPicItem2');
-                             tmp.src=this.src;">
-                    </div>
-                    <div class="lineItem slide2">
-                        <img src="images/yar2.jpg" alt="TMP" class="picItem"
-                             onclick="let tmp = document.getElementById('mainSliderPicItem2');
-                             tmp.src=this.src;">
-                    </div>
                 </div>
             </div>
         </div>
@@ -257,50 +212,56 @@
         <div class="slide sl3">
             <div class="content-slide">
                 <div class="slider-comment">
-                    <h2 class="slider__header" style="font-size: 30px">Фитнес клуб 100%, Ярославль</h2>
-                    <p class="sliderText">«Работали с организацией и приобрели целую линейку тренажеров для нашего
-                        клуба. Понравилось, что
-                        ребята подошли к делу профессионально и, самое главное, выполнили все обещанные обязательства.
-                        Будем
-                        обращаться, и, думаю, еще не раз»</p>
-                    <button class="sliderBtn"> WhatsApp
+                    <h2 class="slider__header" style="font-size: 30px">Росинкас при ЦБ РФ</h2>
+                    <p class="sliderText">«организация хорошая! все что планировали все сделали, тренажеры в отличном состоянии, без нареканий, продавцу можно доверять! 👍🏻👍🏻👍🏻»</p>
+                    <button class="sliderBtn" onclick="window.location.href = 'https://www.avito.ru/user/68c77e0d8db056d1baf53852c1ea4133/profile?src=sharing'"> Все отзывы
                     </button>
                 </div>
             </div>
             <div class="content-slide">
                 <div class="currPic slide3">
-                    <img src="images/Yaroslavl.jpg" alt="TMP2" class="mainPicItem" id="mainSliderPicItem3">
+                    <img src="images/rosinkas.jpeg" alt="TMP2" class="mainPicItem" id="mainSliderPicItem3">
                 </div>
-                <div class="picLine slide3">
-                    <div class="lineItem slide3">
-                        <img src="images/Yaroslavl.jpg" alt="TMP" class="picItem"
-                             onclick="let tmp = document.getElementById('mainSliderPicItem3');
+            </div>
+        </div>
+
+        <div class="slide sl4">
+            <div class="content-slide">
+                <div class="slider-comment">
+                    <h2 class="slider__header" style="font-size: 30px">Bestlifestudio, г. Москва</h2>
+                    <p class="sliderText">«Рад, что познакомился с ребятами! Заказал у них силовые тренажеры, кардио и оборудование для групповых занятий. Очень доволен! Тренажеры привезли, собрали, настроили, все на 5 из 5 👍 В итоге купил тренажеры в 2 раза дешевле. Учитывая нынешний рост цен - это очень выгодно!
+                        СПАСИБО, АНДРЕЙ!)🤝»</p>
+                    <button class="sliderBtn" onclick="window.location.href = 'https://www.avito.ru/user/68c77e0d8db056d1baf53852c1ea4133/profile?src=sharing'"> Все отзывы
+                    </button>
+                </div>
+            </div>
+            <div class="content-slide">
+                <div class="currPic slide4">
+                    <img src="images/best1.jpeg" alt="TMP2" class="mainPicItem" id="mainSliderPicItem4">
+                </div>
+                <div class="picLine slide4">
+                    <div class="lineItem slide4">
+                        <img src="images/best1.jpeg" alt="TMP" class="picItem"
+                             onclick="let tmp = document.getElementById('mainSliderPicItem4');
                              tmp.src=this.src;">
                     </div>
-                    <div class="lineItem slide3">
-                        <img src="images/yar2.jpg" alt="TMP" class="picItem"
-                             onclick="let tmp = document.getElementById('mainSliderPicItem3');
+                    <div class="lineItem slide4">
+                        <img src="images/best2.jpeg" alt="TMP" class="picItem"
+                             onclick="let tmp = document.getElementById('mainSliderPicItem4');
                              tmp.src=this.src;">
                     </div>
-                    <div class="lineItem slide3">
-                        <img src="images/Yaroslavl.jpg" alt="TMP" class="picItem"
-                             onclick="let tmp = document.getElementById('mainSliderPicItem3');
-                             tmp.src=this.src;">
-                    </div>
-                    <div class="lineItem slide3">
-                        <img src="images/yar2.jpg" alt="TMP" class="picItem"
-                             onclick="let tmp = document.getElementById('mainSliderPicItem3');
+                    <div class="lineItem slide4">
+                        <img src="images/best3.jpeg" alt="TMP" class="picItem"
+                             onclick="let tmp = document.getElementById('mainSliderPicItem4');
                              tmp.src=this.src;">
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 </section>
 
 <!--Contacts-->
-<section class="contacts">
-    <a name="Contacts"></a>
+<section class="contacts section" id="Contacts">
     <div class="container container_contacts">
         <div class="content map">
             <script type="text/javascript" charset="utf-8" async
@@ -313,7 +274,7 @@
                     <img src="images/telephone.png" alt="telephone" class="inner-img">
                     <h2 class="inner-text">Телефон</h2>
                 </div>
-                <p class="outer-info"><a href="tel:+7 (991) 934-13-59" class="anyLink">+7 (991) 934-13-59</a></p>
+                <p class="outer-info"><a href="tel:+7 (495) 488-69-63" class="anyLink">+7 (495) 488-69-63</a></p>
                 <div class="inner-container location">
                     <img src="images/point.png" alt="Point" class="inner-img">
                     <h2 class="inner-text">Наш офис</h2>
