@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +8,7 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="slider.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="shortcut icon" href="images/logo.jpeg" type="image/jpeg">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/carousel.js"></script>
@@ -28,7 +28,7 @@
         </div>
         <nav class="nav">
             <ul>
-                <li> <a href="#Main" class="nav-link active">Главная</a></li>
+                <li><a href="#Main" class="nav-link active">Главная</a></li>
                 <li><a href="#About-us" class="nav-link">О нас</a></li>
                 <li><a href="#Projects" class="nav-link">Проекты</a></li>
                 <li><a href="#Contacts" class="nav-link">Контакты</a></li>
@@ -39,14 +39,13 @@
                 <img src="images/whatsapp.png" alt="what's app" class="whatsapp">
             </a>
             <div class="header-number">
-                <a href="tel:+7 (495) 488-69-63" class="anyLink">+7 (495) 488-69-63</a>
+                <a href="tel:+7 (495) 488-69-63" class="anyLink phoneLink">+7 (495) 488-69-63</a>
             </div>
         </div>
     </div>
 </header>
 
 <section class="testMain section" id="Main">
-<!--    <a name="Main"></a>-->
     <div class="container test">
         <img src="images/newMainPhoto.jpg" alt="BLANC" class=" testBack">
         <img src="images/circle1.png" alt="" class="circle circle_pos1">
@@ -61,7 +60,7 @@
                     <h3 class="main-text subtext">с доставкой по России и СНГ</h3>
                     <div class="line"></div>
                 </div>
-                <button class="main-btn assort" >
+                <button class="main-btn assort">
                     <span class="circle" aria-hidden="true">
   <span class="icon arrow"></span>
   </span>
@@ -79,7 +78,7 @@
         <div class="content">
             <img src="images/barbel.png" alt="" class="device dev_5 wow animate__animated animate__backInLeft">
             <img src="images/workout.png" alt="" class="device dev_1 wow animate__animated animate__backInRight">
-            <img src="images/dumbbell.png" alt="" class="device dev_2 wow animate__animated animate__backInLeft">
+            <!--            <img src="images/dumbbell.png" alt="" class="device dev_2 wow animate__animated animate__backInLeft">-->
             <img src="images/dumbbell%20(1).png" alt="" class="device dev_3 wow animate__animated animate__backInRight">
             <div class="main-content content_about-us">
                 <h2 class="main-text text_about-us wow animate__animated animate__fadeInLeft"><span
@@ -106,8 +105,8 @@
 <section class="our-projects wow animate__animated animate__fadeInUp section" id="Projects">
     <div class="container container_projects">
         <div class="header_our-projects">
-            <h2 class="directions ">Наши направления работы</h2>
-            <span class="line-dir"></span>
+            <h2 class="directions">Наши направления работы</h2>
+            <span class="line-dir wow animate__animated animate__fadeInLeft"></span>
         </div>
         <div class="content project">
             <div class="inner-content">
@@ -165,7 +164,9 @@
                             спортивным
                             объектам. 👍💪🏋️‍♂️»</p>
                     </div>
-                    <button class="sliderBtn" onclick="window.location.href = 'https://www.avito.ru/user/68c77e0d8db056d1baf53852c1ea4133/profile?src=sharing'">Все отзывы
+                    <button class="sliderBtn"
+                            onclick="window.location.href = 'https://www.avito.ru/user/68c77e0d8db056d1baf53852c1ea4133/profile?src=sharing'">
+                        Все отзывы
                     </button>
                 </div>
             </div>
@@ -173,91 +174,99 @@
                 <div class="currPic slide1">
                     <img src="images/Sochi.jpg" alt="TMP2" class="mainPicItem" id="mainSliderPicItem1">
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide sl2">
+        <div class="content-slide">
+            <div class="slider-comment">
+                <h2 class="slider__header" style="font-size: 30px">Фитнес клуб 100%, г. Ярославль</h2>
+                <p class="sliderText">«Работали с организацией и приобрели целую линейку тренажеров для нашего
+                    клуба. Понравилось, что
+                    ребята подошли к делу профессионально и, самое главное, выполнили все обещанные обязательства.
+                    Будем
+                    обращаться, и, думаю, еще не раз»</p>
+                <button class="sliderBtn"
+                        onclick="window.location.href = 'https://www.avito.ru/user/68c77e0d8db056d1baf53852c1ea4133/profile?src=sharing'">
+                    Все отзывы
+                </button>
+            </div>
+        </div>
+        <div class="content-slide">
+            <div class="currPic slide2">
+                <img src="images/Yaroslavl.jpg" alt="TMP2" class="mainPicItem" id="mainSliderPicItem2">
+            </div>
+            <div class="picLine slide2">
+                <div class="lineItem slide2">
+                    <img src="images/Yaroslavl.jpg" alt="TMP" class="picItem"
+                         onclick="let tmp = document.getElementById('mainSliderPicItem2');
+                             tmp.src=this.src;">
+                </div>
+                <div class="lineItem slide2">
+                    <img src="images/yar2.jpg" alt="TMP" class="picItem"
+                         onclick="let tmp = document.getElementById('mainSliderPicItem2');
+                             tmp.src=this.src;">
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="slide sl2">
-            <div class="content-slide">
-                <div class="slider-comment">
-                    <h2 class="slider__header" style="font-size: 30px">Фитнес клуб 100%, г. Ярославль</h2>
-                    <p class="sliderText">«Работали с организацией и приобрели целую линейку тренажеров для нашего
-                        клуба. Понравилось, что
-                        ребята подошли к делу профессионально и, самое главное, выполнили все обещанные обязательства.
-                        Будем
-                        обращаться, и, думаю, еще не раз»</p>
-                    <button class="sliderBtn" onclick="window.location.href = 'https://www.avito.ru/user/68c77e0d8db056d1baf53852c1ea4133/profile?src=sharing'"> Все отзывы
-                    </button>
-                </div>
-            </div>
-            <div class="content-slide">
-                <div class="currPic slide2">
-                    <img src="images/Yaroslavl.jpg" alt="TMP2" class="mainPicItem" id="mainSliderPicItem2">
-                </div>
-                <div class="picLine slide2">
-                    <div class="lineItem slide2">
-                        <img src="images/Yaroslavl.jpg" alt="TMP" class="picItem"
-                             onclick="let tmp = document.getElementById('mainSliderPicItem2');
-                             tmp.src=this.src;">
-                    </div>
-                    <div class="lineItem slide2">
-                        <img src="images/yar2.jpg" alt="TMP" class="picItem"
-                             onclick="let tmp = document.getElementById('mainSliderPicItem2');
-                             tmp.src=this.src;">
-                    </div>
-                </div>
+    <div class="slide sl3">
+        <div class="content-slide">
+            <div class="slider-comment">
+                <h2 class="slider__header" style="font-size: 30px">Росинкас при ЦБ РФ, г. Москва</h2>
+                <p class="sliderText">«Организация хорошая! все что планировали все сделали, тренажеры в отличном
+                    состоянии, без нареканий, продавцу можно доверять! 👍🏻👍🏻👍🏻»</p>
+                <button class="sliderBtn"
+                        onclick="window.location.href = 'https://www.avito.ru/user/68c77e0d8db056d1baf53852c1ea4133/profile?src=sharing'">
+                    Все отзывы
+                </button>
             </div>
         </div>
+        <div class="content-slide">
+            <div class="currPic slide3">
+                <img src="images/rosinkas.jpeg" alt="TMP2" class="mainPicItem" id="mainSliderPicItem3">
+            </div>
+        </div>
+    </div>
 
-        <div class="slide sl3">
-            <div class="content-slide">
-                <div class="slider-comment">
-                    <h2 class="slider__header" style="font-size: 30px">Росинкас при ЦБ РФ</h2>
-                    <p class="sliderText">«организация хорошая! все что планировали все сделали, тренажеры в отличном состоянии, без нареканий, продавцу можно доверять! 👍🏻👍🏻👍🏻»</p>
-                    <button class="sliderBtn" onclick="window.location.href = 'https://www.avito.ru/user/68c77e0d8db056d1baf53852c1ea4133/profile?src=sharing'"> Все отзывы
-                    </button>
-                </div>
+    <div class="slide sl4">
+        <div class="content-slide">
+            <div class="slider-comment">
+                <h2 class="slider__header" style="font-size: 30px">Bestlifestudio, г. Москва</h2>
+                <p class="sliderText">«Рад, что познакомился с ребятами! Заказал у них силовые тренажеры, кардио и
+                    оборудование для групповых занятий. Очень доволен! Тренажеры привезли, собрали, настроили, все на 5
+                    из 5 👍 В итоге купил тренажеры в 2 раза дешевле. Учитывая нынешний рост цен - это очень выгодно!
+                    СПАСИБО, АНДРЕЙ!)🤝»</p>
+                <button class="sliderBtn"
+                        onclick="window.location.href = 'https://www.avito.ru/user/68c77e0d8db056d1baf53852c1ea4133/profile?src=sharing'">
+                    Все отзывы
+                </button>
             </div>
-            <div class="content-slide">
-                <div class="currPic slide3">
-                    <img src="images/rosinkas.jpeg" alt="TMP2" class="mainPicItem" id="mainSliderPicItem3">
+        </div>
+        <div class="content-slide">
+            <div class="currPic slide4">
+                <img src="images/best1.jpeg" alt="TMP2" class="mainPicItem" id="mainSliderPicItem4">
+            </div>
+            <div class="picLine slide4">
+                <div class="lineItem slide4">
+                    <img src="images/best1.jpeg" alt="TMP" class="picItem"
+                         onclick="let tmp = document.getElementById('mainSliderPicItem4');
+                             tmp.src=this.src;">
+                </div>
+                <div class="lineItem slide4">
+                    <img src="images/best2.jpeg" alt="TMP" class="picItem"
+                         onclick="let tmp = document.getElementById('mainSliderPicItem4');
+                             tmp.src=this.src;">
+                </div>
+                <div class="lineItem slide4">
+                    <img src="images/best3.jpeg" alt="TMP" class="picItem"
+                         onclick="let tmp = document.getElementById('mainSliderPicItem4');
+                             tmp.src=this.src;">
                 </div>
             </div>
         </div>
-
-        <div class="slide sl4">
-            <div class="content-slide">
-                <div class="slider-comment">
-                    <h2 class="slider__header" style="font-size: 30px">Bestlifestudio, г. Москва</h2>
-                    <p class="sliderText">«Рад, что познакомился с ребятами! Заказал у них силовые тренажеры, кардио и оборудование для групповых занятий. Очень доволен! Тренажеры привезли, собрали, настроили, все на 5 из 5 👍 В итоге купил тренажеры в 2 раза дешевле. Учитывая нынешний рост цен - это очень выгодно!
-                        СПАСИБО, АНДРЕЙ!)🤝»</p>
-                    <button class="sliderBtn" onclick="window.location.href = 'https://www.avito.ru/user/68c77e0d8db056d1baf53852c1ea4133/profile?src=sharing'"> Все отзывы
-                    </button>
-                </div>
-            </div>
-            <div class="content-slide">
-                <div class="currPic slide4">
-                    <img src="images/best1.jpeg" alt="TMP2" class="mainPicItem" id="mainSliderPicItem4">
-                </div>
-                <div class="picLine slide4">
-                    <div class="lineItem slide4">
-                        <img src="images/best1.jpeg" alt="TMP" class="picItem"
-                             onclick="let tmp = document.getElementById('mainSliderPicItem4');
-                             tmp.src=this.src;">
-                    </div>
-                    <div class="lineItem slide4">
-                        <img src="images/best2.jpeg" alt="TMP" class="picItem"
-                             onclick="let tmp = document.getElementById('mainSliderPicItem4');
-                             tmp.src=this.src;">
-                    </div>
-                    <div class="lineItem slide4">
-                        <img src="images/best3.jpeg" alt="TMP" class="picItem"
-                             onclick="let tmp = document.getElementById('mainSliderPicItem4');
-                             tmp.src=this.src;">
-                    </div>
-                </div>
-            </div>
-        </div>
+    </div>
 </section>
 
 <!--Contacts-->
@@ -294,7 +303,7 @@
 </section>
 
 <div class="modalWrapper buy">
-    <div class="close Buy">&times;</div>
+    <div class="close Buy" style="height: 30px; font-size: 30px" aria-hidden="true">&times;</div>
     <div class="modalContent">
         <div class="modalInner">
             <div class="innerModalPic">
@@ -340,7 +349,7 @@
     </div>
 </div>
 <div class="modalWrapper service">
-    <div class="close Service">&times;</div>
+    <div class="close Service" style="height: 30px; font-size: 30px" aria-hidden="true">&times;</div>
     <div class="modalContent">
         <div class="modalInner">
             <div class="innerModalPic">
@@ -386,7 +395,7 @@
     </div>
 </div>
 <div class="modalWrapper sale">
-    <div class="close Sale">&times;</div>
+    <div class="close Sale" style="height: 30px; font-size: 30px" aria-hidden="true">&times;</div>
     <div class="modalContent">
         <div class="modalInner">
             <div class="innerModalPic salePic">

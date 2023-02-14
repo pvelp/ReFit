@@ -7,12 +7,6 @@
     margin: 0;
     border: none;
 }
-/*10 209 200*/
-*,
-*::before,
-*::after {
-    /*box-sizing: border-box;*/
-}
 
 body {
     margin: 0;
@@ -33,7 +27,6 @@ body {
     background-color: #161a1e;
     border-bottom: solid #272b2e 1px;
     z-index: 9999;
-     /*padding-left: 200px;*/
 }
 
 .header-container {
@@ -114,6 +107,10 @@ ul li:last-child {
     text-decoration: none;
 }
 
+.phoneLink {
+    text-shadow: 0 0 20px #00d5a9, 0 0 20px #008074, 0 0 20px #008074;
+}
+
 .anyLink:hover {
     color: #00d5a9;
 }
@@ -124,10 +121,8 @@ ul li:last-child {
     border-bottom: #00d5a9;
     border-bottom-style: solid;
 }
+
 /* MAIN */
-.testMain {
-    /*margin-top: 100px;*/
-}
 
 .container {
     background-color: #161a1e;
@@ -217,6 +212,7 @@ ul li:last-child {
     margin-left: 80%;
     margin-top: 17%;
 }
+
 .circle.circle_pos3 {
     margin-left: 51%;
     margin-top: 33%;
@@ -251,6 +247,7 @@ ul li:last-child {
     display: block;
     z-index: -1;
 }
+
 .main-btn.assort {
     width: 330px;
     height: auto;
@@ -268,6 +265,7 @@ ul li:last-child {
     background: #00d5a9;
     border-radius: 1.625rem;
 }
+
 .main-btn.assort .circle .icon {
     transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: absolute;
@@ -314,6 +312,7 @@ ul li:last-child {
     text-transform: uppercase;
     width: 300px;
 }
+
 .main-btn:hover .circle {
     width: 100%;
 }
@@ -326,37 +325,38 @@ ul li:last-child {
 .main-btn:hover .button-text {
     color: #fff;
 }
+
 /*ULTRA MEGE BUTTON*/
 .button:hover {
     background-color: #00d5a9;
     cursor: pointer;
 }
 
-.device{
+.device {
     width: 80px;
     height: 80px;
     position: absolute;
     float: left;
 }
 
-.dev_1{
+.dev_1 {
     margin-top: 6%;
     margin-left: 25%;
     transform: rotate(45deg);
 }
 
-.dev_2{
+.dev_2 {
     margin-top: 25%;
     margin-left: 45%;
 }
 
-.dev_3{
+.dev_3 {
     margin-top: 10%;
-    margin-left: 43%;
+    margin-left: 45%;
 }
 
 
-.dev_5{
+.dev_5 {
     margin-top: 8%;
     margin-left: 4%;
     transform: rotate(30deg);
@@ -365,7 +365,7 @@ ul li:last-child {
 /* ABOUT US */
 .container_about-us {
     background: #161a1e;
-    height: 840px;
+    height: 750px;
 }
 
 .main-content.content_about-us {
@@ -378,7 +378,7 @@ ul li:last-child {
 .main-text.text_about-us {
     color: #ffffff;
     font-weight: 600;
-    font-size: 36px;
+    font-size: 33px;
     position: absolute;
     width: 40%;
 }
@@ -407,6 +407,7 @@ ul li:last-child {
     padding-left: 20px;
     height: 700px;
 }
+
 .content.contacts {
     height: 700px;
 }
@@ -466,7 +467,6 @@ ul li:last-child {
 .container.container_projects {
     background-color: #161a1e;
     height: 624px;
-    /*max-width: 1525px;*/
 }
 
 .content.project {
@@ -514,10 +514,6 @@ ul li:last-child {
 .button.lear-more {
     width: 130px;
     height: 50px;
-    /*background-color: rgba(0, 0, 0, 0);*/
-    /*border-style: solid;*/
-    /*border-color: #00d5a9;*/
-    /*border-width: 1.5px;*/
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     letter-spacing: 1px;
@@ -565,7 +561,8 @@ ul li:last-child {
 }
 
 .directions {
-    margin-left: 20%;
+    margin-left: 31%;
+    text-align: center;
     font-size: 45px;
     color: #ffffff;
 }
@@ -573,11 +570,11 @@ ul li:last-child {
 .line-dir {
     position: absolute;
     margin-top: 80px;
-    margin-left: 20%;
+    margin-left: 31%;
     border-bottom-style: solid;
     border-color: #00d5a9;
     border-bottom-width: 5px;
-    width: 170px;
+    width: 605px;
 }
 
 .line-dir.sliderLine {
@@ -798,9 +795,9 @@ ul li:last-child {
 
 .main-content.testMainContent {
     background-color: rgba(0, 0, 0, 0);
-    width: 45%;
+    width: 700px;
     margin-left: 100px;
-    margin-top: 17%;
+    margin-top: 26%;
 }
 
 .slideHead {
@@ -819,7 +816,6 @@ ul li:last-child {
 }
 
 .content-slide {
-    /*margin-top: 80px;*/
     width: 50%;
     height: 100%;
     display: flex;
@@ -830,7 +826,7 @@ ul li:last-child {
 }
 
 .slider__header {
-    margin-top: 200px;
+    margin-top: 180px;
     margin-left: 17%;
     text-align: center;
     width: 70%;
@@ -847,13 +843,10 @@ ul li:last-child {
 
 .slider-comment {
     margin-left: 20px;
-    /*margin-right: 20px;*/
-    margin-top: 80px;
-    /*background: #272b2e;*/
+    margin-top: 40px;
 }
 
 .comment-content {
-    /*margin-top: 40px;*/
     width: 100%;
     height: 100%;
 }
@@ -887,10 +880,7 @@ ul li:last-child {
     transform: translateY(-1px);
 }
 
-.slider__header {
-    /*border: solid #00d5a9 2px;*/
-    /*border-radius: 15px;*/
-}
+
 .currPic {
     margin-top: 100px;
     display: flex;
@@ -959,9 +949,11 @@ ul li:last-child {
 .starsPlace {
     margin-right: 5px;
 }
+
 .starsPlace:last-child {
     margin-right: 0;
 }
+
 .star {
     width: 25px;
     height: 25px;
